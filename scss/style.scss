@@ -45,16 +45,18 @@ header {
     padding: 1em 0;
     border: 2px solid $white;
     border-radius: 10px;
+    
+    #enter {
+        display: inline-block;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        background-color: $blue;
+        color: $white;
+        border-radius: 5px;
+        font-weight: 700;
+    }
 }
-#enter {
-    display: inline-block;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    background-color: $blue;
-    color: $white;
-    border-radius: 5px;
-    font-weight: 700;
-}
+
 
 .item1, .item2, .item3 {
     display: none;
@@ -65,11 +67,12 @@ header {
 
 li i {
     width: 100%;
+    &:hover {
+        color: $blue;
+    }
 }
 
-li i:hover {
-    color: $blue;
-}
+
 
 /*--------------
 The drawing
@@ -83,14 +86,14 @@ The drawing
 }
 #wind {
 	//display: none;
-    background-color: orange;
+    background-color: $orange;
     border-radius: 5px;
     position: relative;
     top: 2em;
 }
 #fire {
 	//display: none;
-    background-color: orange;
+    background-color: $orange;
     border-radius: 5px;
     position: relative;
     top: 2em;
@@ -144,58 +147,114 @@ The drawing
         }
     }
     
+    .cream {
+        position: absolute;
+        bottom: 110px;
+        left: 30px;
+        background-color: $vanilla;
+        width: 240px;
+        height: 80px;
+        border-radius: 50%;
+        border: 4px solid darken($vanilla, 10%);
+        box-shadow: inset 0 0 5px darken($vanilla, 10%);
+        z-index: 60;
+    }
+    .creamMore1 {
+        position: absolute;
+        bottom: 90px;
+        left: 50px;
+        background-color: darken($vanilla, 10%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        z-index: 50;
+        -webkit-transform: skewY(10deg);
+        transform: skewY(10deg);
+    }
+    .creamMore2 {
+        position: absolute;
+        bottom: 75px;
+        left: 130px;
+        background-color: darken($vanilla, 10%);
+        width: 20px;
+        height: 40px;
+        border-radius: 50%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        z-index: 50;
+    }
+    .creamMore3 {
+        position: absolute;
+        bottom: 90px;
+        left: 190px;
+        background-color: darken($vanilla, 10%);
+        width: 60px;
+        height: 40px;
+        border-radius: 50%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        z-index: 50;
+        -webkit-transform: skewY(-10deg);
+        transform: skewY(-10deg);
+
+    }
+    
+    .cake1 {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        background-color: $pink;
+        width: 240px;
+        height: 80px;
+        border-radius: 50%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        box-shadow: 0px 6px 3px -5px #666;
+        z-index: 10;
+    }
+    .cake2 {
+        position: absolute;
+        bottom: 50px;
+        left: 30px;
+        background-color: darken($vanilla, 10%);
+        width: 240px;
+        height: 80px;
+        border-radius: 50%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        box-shadow: inset 0px 0px 20px $red;
+        z-index: 20;
+    }
+    .cake3 {
+        position: absolute;
+        bottom: 70px;
+        left: 30px;
+        background-color: $pink;
+        width: 240px;
+        height: 80px;
+        border-radius: 50%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        box-shadow: 0px 6px 5px -5px $red;
+        z-index: 30;
+    }
+    .plate {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $grey;
+        width: 300px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0px 3px 5px $black;
+        box-shadow: 0 2px 0 lighten($grey, 20%), 0 4px 0 lighten($grey, 20%), 0 5px 40px rgba(0, 0, 0, 0.5);
+    }
 }
-.plate {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: grey;
-    width: 300px;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 0px 3px 5px #000;
-    box-shadow: 0 2px 0 #b3b3b3, 0 4px 0 #b3b3b3, 0 5px 40px rgba(0, 0, 0, 0.5);
-}
-.cake1 {
-    position: absolute;
-    bottom: 20px;
-    left: 30px;
-    background-color: pink;
-    width: 240px;
-    height: 80px;
-    border-radius: 50%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    box-shadow: 0px 6px 3px -5px #666;
-    z-index: 10;
-}
-.cake2 {
-    position: absolute;
-    bottom: 50px;
-    left: 30px;
-    background-color: navajowhite;
-    width: 240px;
-    height: 80px;
-    border-radius: 50%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    box-shadow: inset 0px 0px 20px red;
-    z-index: 20;
-}
-.cake3 {
-    position: absolute;
-    bottom: 70px;
-    left: 30px;
-    background-color: pink;
-    width: 240px;
-    height: 80px;
-    border-radius: 50%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    box-shadow: 0px 6px 5px -5px red;
-    z-index: 30;
-}
+
+
 
 @-webkit-keyframes moveFlame {
   0% {
@@ -250,59 +309,6 @@ The drawing
     transform: skewX(3deg);
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
   }
-}
-.cream {
-    position: absolute;
-    bottom: 110px;
-    left: 30px;
-    background-color: #fffdf0;
-    width: 240px;
-    height: 80px;
-    border-radius: 50%;
-    border: 4px solid #F8F9E8;
-    box-shadow: inset 0 0 5px #f8f9e8;
-    z-index: 60;
-}
-.creamMore1 {
-    position: absolute;
-    bottom: 90px;
-    left: 50px;
-    background-color: #F8F9E8;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    z-index: 50;
-    -webkit-transform: skewY(10deg);
-    transform: skewY(10deg);
-}
-.creamMore2 {
-    position: absolute;
-    bottom: 75px;
-    left: 130px;
-    background-color: #F8F9E8;
-    width: 20px;
-    height: 40px;
-    border-radius: 50%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    z-index: 50;
-}
-.creamMore3 {
-    position: absolute;
-    bottom: 90px;
-    left: 190px;
-    background-color: #F8F9E8;
-    width: 60px;
-    height: 40px;
-    border-radius: 50%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    z-index: 50;
-    -webkit-transform: skewY(-10deg);
-    transform: skewY(-10deg);
-    
 }
 
 
