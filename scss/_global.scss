@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+    font-size: 62.5%; /* Simplifie calcul des tailles de polices en rem */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primaryFont, cursive;
+    text-align: center;
+    background-color: $bgBodycolor;
+    color: $white;
+    font-size: 1.6rem;
+    font-size: 16px; /* Pour les anciens navigateurs */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
