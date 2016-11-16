@@ -80,19 +80,19 @@ The drawing
 
 /* text and icon */
 .blow {
-    //display: none;
+    display: none;
     font-size: 1.5em;
     margin-top: 2em;
 }
 #wind {
-	//display: none;
+	display: none;
     background-color: $orange;
     border-radius: 5px;
     position: relative;
     top: 2em;
 }
 #fire {
-	//display: none;
+	display: none;
     background-color: $orange;
     border-radius: 5px;
     position: relative;
@@ -102,7 +102,7 @@ The drawing
 /* cake */
 
 .drawing {
-    //display: none;
+    display: none;
     width: 300px;
     height: 300px;
     position: relative;
