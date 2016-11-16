@@ -42,20 +42,23 @@ header #enter {
   color: #fff;
   border-radius: 5px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .item1, .item2, .item3 {
   display: none;
-  font-size: 2rem;
-  font-size: 20px;
-  margin-top: 1em;
+  font-size: 2.2rem;
+  font-size: 22px;
+  margin-top: 2em;
 }
 
 li i {
   width: 100%;
+  transition: all 0.2s ease-in-out;
 }
-li i:hover {
+li i:hover, li i:focus {
   color: #229aad;
+  cursor: pointer;
 }
 
 /*--------------
@@ -75,6 +78,9 @@ The drawing
   position: relative;
   top: 2em;
 }
+#wind:hover, #wind:focus {
+  cursor: pointer;
+}
 
 #fire {
   display: none;
@@ -82,6 +88,9 @@ The drawing
   border-radius: 5px;
   position: relative;
   top: 2em;
+}
+#fire:hover, #fire:focus {
+  cursor: pointer;
 }
 
 /* cake */
