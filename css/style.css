@@ -46,7 +46,7 @@ header {
 }
 
 .item1, .item2, .item3 {
-  /*display: none;*/
+  display: none;
   font-size: 2rem;
   font-size: 20px;
   margin-top: 1em;
