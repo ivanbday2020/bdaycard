@@ -4,11 +4,12 @@
 $(document).ready(function () {
     "use strict";
     
-    var $enter, $item1, $item2, $item3, $audioApplaud, $audioBirthday;
+    var $enter, $item1, $item2, $item3, $item4, $audioApplaud, $audioBirthday;
     $enter = $('#enter');
     $item1 = $('.item1');
     $item2 = $('.item2');
     $item3 = $('.item3');
+	$item4 = $('.item4');
     
     $audioApplaud = document.createElement('audio');
     $audioApplaud.setAttribute('src', 'audio/applaudissements.mp3');
@@ -26,6 +27,10 @@ $(document).ready(function () {
     
     $item2.on('click', function () {
         $item3.show();
+    });
+	
+	$item3.on('click', function () {
+        $item4.show();
     });
     
     $item3.on('click', function () {
