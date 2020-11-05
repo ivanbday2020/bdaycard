@@ -152,7 +152,7 @@ The drawing
   width: 300px;
   height: 300px;
   position: relative;
-  margin: 2em auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 .drawing .candle {
   position: absolute;
