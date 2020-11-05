@@ -45,7 +45,7 @@ header #enter {
   cursor: pointer;
 }
 
-.item1, .item2, .item3 {
+.item1, .item2, .item3, .item4 {
   display: none;
   font-size: 2.2rem;
   font-size: 22px;
