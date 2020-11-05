@@ -122,6 +122,7 @@ The drawing
   display: none;
   font-size: 1.5em;
   margin-top: 2em;
+  position : relative;
 }
 
 #wind {
