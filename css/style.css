@@ -65,7 +65,7 @@ p.cursor::after {
 }
 
 .ytvid {
-  margin-top: 500px;
+  padding-top: 500px !important;
 }
 
 ul {
