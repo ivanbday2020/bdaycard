@@ -68,6 +68,10 @@ p.cursor::after {
   padding-top: 500px !important;
 }
 
+.py-5 {
+  padding-top: 300px !important;
+}
+
 ul {
   list-style: none;
   margin: 0;
