@@ -33,7 +33,7 @@ $(document).ready(function () {
         $item4.show();
     });
     
-    $item3.on('click', function () {
+    $item4.on('click', function () {
         $("h1:contains('Today is a special day !!!')").html("Happy Birthday to you !");
         $enter.hide();
         $('.item').hide();
